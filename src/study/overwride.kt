@@ -1,3 +1,5 @@
+package study
+
 /**用户基类**/
 open class P{
     open fun study(){       // 允许子类重写
@@ -5,7 +7,7 @@ open class P{
     }
 }
 
-/**子类继承 Person 类**/
+/**子类继承 study.Person 类**/
 class Stu : P() {
 
     override fun study(){    // 重写方法
@@ -14,7 +16,7 @@ class Stu : P() {
 }
 
 fun main(args: Array<String>) {
-    val s =  Stu()
+    val s = Stu()
     s.study();
 
 }

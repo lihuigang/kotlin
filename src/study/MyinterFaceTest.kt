@@ -1,3 +1,5 @@
+package study
+
 interface MyInterface {
     fun bar()
     fun foo() {
@@ -12,7 +14,7 @@ class Child : MyInterface {
     }
 }
 fun main(args: Array<String>) {
-    val c =  Child()
+    val c = Child()
     c.foo();
     c.bar();
 

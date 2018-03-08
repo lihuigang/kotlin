@@ -1,3 +1,5 @@
+package study
+
 fun buildString(b: (StringBuilder) -> Unit): String {
     val sb = StringBuilder()
     b(sb)

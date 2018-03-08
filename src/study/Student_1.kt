@@ -1,4 +1,4 @@
-/*如果子类没有主构造函数，则必须在每一个二级构造函数中用 super 关键字初始化基类，或者在代理另一个构造函数。
+package study/*如果子类没有主构造函数，则必须在每一个二级构造函数中用 super 关键字初始化基类，或者在代理另一个构造函数。
  * 初始化基类时，可以调用基类的不同构造方法。
  */
 /**用户基类**/
@@ -10,7 +10,7 @@ open class Person(name:String){
     }
 }
 
-/**子类继承 Person 类**/
+/**子类继承 study.Person 类**/
 class Student{
 
     /**次级构造函数**/
@@ -24,5 +24,5 @@ class Student{
 }
 
 fun main(args: Array<String>) {
-    var s =  Student("Runoob", 18, "S12345", 89)
+    var s = Student("Runoob", 18, "S12345", 89)
 }
